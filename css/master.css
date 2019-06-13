@@ -45,6 +45,14 @@ footer{
   background-color: #2f567c;
 }
 
+footer a{
+  color: #1ABC9C;
+}
+footer a:hover{
+  color: #2C3E50;
+  text-decoration: underline;
+}
+
 .bg-footer{
   background-color: #2C3E50;
 }
