@@ -36,3 +36,15 @@ img{
   max-height: 250px;
   width: auto;
 }
+
+
+
+/* footer */
+footer{
+  color: white;
+  background-color: #2f567c;
+}
+
+.bg-footer{
+  background-color: #2C3E50;
+}
