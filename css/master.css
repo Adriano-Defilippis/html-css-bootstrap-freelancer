@@ -23,6 +23,46 @@ a{
   color: white;
 }
 
+/* divider */
+.divider-custom{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.divider-custom div{
+  float: left;
+
+}
+
+
+.divider-custom .divider-white{
+  width: 100%;
+  max-width: 7rem;
+  height: .25rem;
+  background-color: white;
+  border-radius: 1rem;
+  margin-top: 8px;
+  border-color: white;
+}
+
+.white .star i{
+  color: white;
+}
+
+.divider-custom .divider-black{
+  width: 100%;
+  max-width: 7rem;
+  height: .25rem;
+  background-color: #2c3e50;
+  border-radius: 1rem;
+  margin-top: 8px;
+  border-color: #2c3e50;
+}
+
+.divider-custom .star i{
+  margin: 0 10px;
+}
 
 /* Blocco Header */
 #mainNav{
