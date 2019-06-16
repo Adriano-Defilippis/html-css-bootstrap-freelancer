@@ -5,7 +5,7 @@
 }
 
 .row{
-  margin: 2% 0;
+  margin: 2% 0 ;
 }
 
 
@@ -14,6 +14,11 @@ header{
 }
 
 /* Regole generali di stile */
+h1, h2{
+  font-size: 4em;
+  font-weight: bold;
+}
+
 a{
   color: white;
 }
@@ -23,12 +28,30 @@ img{
   width: auto;
 }
 
+section{
+  padding: 4% 0;
+}
+
+[class*="col-"]{
+  margin-bottom: 4%;
+}
+
 .h-100{
   height: 100%;
 }
 
 .w-100{
   width: 100%;
+}
+
+.divider-custom{
+  margin: 4% 0;
+}
+
+/* Regole specifiche di stile per Sezione */
+#section_2 .container,
+#section_3 .container{
+  max-width: 50%;
 }
 
 
@@ -135,7 +158,7 @@ footer a:hover{
 }
 
 footer .ico-hover i:hover{
-  color: black;
+  color: #2C3E50;
 }
 footer .ico-hover a{
   padding: 5px;
