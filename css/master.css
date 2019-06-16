@@ -13,9 +13,15 @@ header{
   background-color: #2C3E50;
 }
 
+
 /* Regole generali di stile */
 h1, h2{
-  font-size: 4em;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+footer{
+  font-size: 1.3em;
   font-weight: bold;
 }
 
@@ -32,27 +38,37 @@ section{
   padding: 4% 0;
 }
 
+/* Per togliere il margine aggiunto alle colonne dove non serve*/
+header [class*="col-"],
+footer [class*="col-"]{
+  margin-bottom: 0px;
+}
+
 [class*="col-"]{
   margin-bottom: 4%;
-}
-
-.h-100{
-  height: 100%;
-}
-
-.w-100{
-  width: 100%;
 }
 
 .divider-custom{
   margin: 4% 0;
 }
 
+.my-button{
+  border: 2px solid white;
+  padding: 3%;
+  border-radius: 5px;
+  font-size: 1.5em;
+  background-color: #1ABC9C;
+  color: white;
+}
+
+
+
 /* Regole specifiche di stile per Sezione */
 #section_2 .container,
 #section_3 .container{
   max-width: 50%;
 }
+
 
 
 /* divider */
@@ -70,7 +86,7 @@ section{
 
 .divider-custom .divider-white{
   width: 100%;
-  max-width: 7rem;
+  max-width: 10rem;
   height: .25rem;
   background-color: white;
   border-radius: 1rem;
@@ -84,7 +100,7 @@ section{
 
 .divider-custom .divider-black{
   width: 100%;
-  max-width: 7rem;
+  max-width: 10rem;
   height: .25rem;
   background-color: #2c3e50;
   border-radius: 1rem;
@@ -96,17 +112,23 @@ section{
   margin: 0 10px;
 }
 
+
+
 /* Blocco Header */
 #mainNav{
   font-family: Montserrat,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   font-weight: 700;
 }
 
+
+
 /* Section 0 */
 #section_0{
   background-color: #1ABC9C;
   color: white;
 }
+
+
 
 
 /* Section 1 */
@@ -122,14 +144,17 @@ section{
   /* display: none; */
 }
 
+
+
 /* Section 2 */
 #section_2{
   background-color: #1ABC9C;
   color: white;
 }
 
-/* Section 3 */
 
+
+/* Section 3 */
 /* Sovrascrivo classe del form di Bootstrap */
 #section_3 form input{
   width: 100%;
@@ -139,7 +164,6 @@ section{
   font-size: 1.5em;
   color: lightgrey;
 }
-
 
 
 
@@ -164,17 +188,35 @@ footer .ico-hover a{
   padding: 5px;
 }
 
-
-
 .bg-footer{
   background-color: #2C3E50;
 }
 
 
-
-
-
 /* Classi ausiliarie */
 .mt-4{
   margin-top: 10px;
+}
+
+.h-100{
+  height: 100%;
+}
+
+.w-100{
+  width: 100%;
+}
+
+.mr-2{
+  margin-right: 1%;
+}
+
+/* Media Query */
+
+@media all screen and (min-width: 768px) {
+
+  #section_2 .container,
+  #section_3 .container{
+    width: 100%;
+  }
+
 }
